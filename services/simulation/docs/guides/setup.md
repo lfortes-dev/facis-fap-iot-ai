@@ -139,7 +139,7 @@ Services and ports:
 | Service | Port | URL |
 |---|---|---|
 | Simulation (REST) | 8080 | http://localhost:8080 |
-| Simulation (Modbus) | 502 | tcp://localhost:502 |
+| Simulation (Modbus) | 5020 | tcp://localhost:5020 |
 | Mosquitto (MQTT) | 1883 | tcp://localhost:1883 |
 | Kafka | 9092 | tcp://localhost:9092 |
 | Kafka UI | 8090 | http://localhost:8090 |

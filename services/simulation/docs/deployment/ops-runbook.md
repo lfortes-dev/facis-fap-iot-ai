@@ -312,10 +312,10 @@ open http://localhost:8090
 |-----------|------|---------|-------------|
 | `http.port` | int | `8080` | HTTP container port |
 | `modbus.enabled` | bool | `true` | Enable Modbus TCP server |
-| `modbus.port` | int | `502` | Modbus container port |
+| `modbus.port` | int | `5020` | Modbus container port |
 | `service.type` | string | `ClusterIP` | K8s Service type |
 | `service.httpPort` | int | `8080` | Service HTTP port |
-| `service.modbusPort` | int | `502` | Service Modbus port |
+| `service.modbusPort` | int | `5020` | Service Modbus port |
 
 ### 4.8 Resource Requests and Limits
 
@@ -458,7 +458,7 @@ curl -X POST http://localhost:8080/api/v1/simulation/reset \
 | Simulation running | `curl /api/v1/simulation/status` | `"state": "running"` |
 | MQTT connected | Service logs | `Connected to MQTT broker` |
 | Kafka delivery | Kafka UI or `kafka-consumer-groups.sh` | Messages in all 5 topics |
-| Modbus registers | `pymodbus.console tcp --host <ip> --port 502` | Register 19000+ readable |
+| Modbus registers | `pymodbus.console tcp --host <ip> --port 5020` | Register 19000+ readable |
 
 ---
 
@@ -624,7 +624,7 @@ kubectl describe pod -n facis <pod-name> | grep -A5 "Conditions\|Events"
 
 ### 7.5 Modbus TCP Connection Refused
 
-**Symptom:** Modbus client gets "connection refused" on port 502.
+**Symptom:** Modbus client gets "connection refused" on port 5020.
 
 **Diagnosis:**
 ```bash
@@ -633,7 +633,7 @@ curl http://localhost:8080/api/v1/config | python3 -m json.tool
 
 # Test with pymodbus console
 pip install pymodbus
-pymodbus.console tcp --host localhost --port 502
+pymodbus.console tcp --host localhost --port 5020
 # Then: client.read_holding_registers 19000 2
 ```
 
