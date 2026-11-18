@@ -1,0 +1,27 @@
+# deployment @ 55e28aa (ref main), generated 2026-10-30T20:43:12Z
+kind	source	digest	used_by
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/common-services/sd-jwt-service:1.2.9-helm	sha256:2df9818abcd71778fbffc33a65259942a75cd2210bd7788c0abd5dd8d0530125	OCM W-Stack/SdJwt Service
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-offering-bootstrap:0.1.0	sha256:4206c93cd6df89e8e5bc51de788abaa833bbcd80d834dc4bc4c0bbd5ef8893f0	OCM W-Stack/Offering Dummy
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-retrieval-service:1.1.7-helm	sha256:fba542f89649bca24b25f3b397c10ac00d76dd05c2617da901c2cd391cd6efc7	OCM W-Stack/Credential Retrieval
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-verification-service:1.3.6-alpha.helm	sha256:9724b0d93ddff47e6d85dfa96e3fffbc062d9c352aae124e0578a9510e55dbe7	OCM W-Stack/Credential Verification Service Chart
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/dummycontentsigner:2.4.3-helm	sha256:79056c76a536fb586dc50497908793f9566eaeb640c1edc261c17359ca4f9fa9	OCM W-Stack/Dummy Content Signer
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/issuance-service:1.9.2-helm	sha256:dd89850671fcdd73b40e3fb0e5a2a28fa5cdc527113610b6c5405ccde3128424	OCM W-Stack/Credential Issuance
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/pre-authorization-bridge:2.5.7-helm	sha256:fdc3af88a1ef8247bbd7f66e8bea3e6f2bac0cf06d960878f53ea44fb2e77453	OCM W-Stack/Pre Authorization Bridge Chart
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/status-list-service:1.5.0-helm	sha256:31d61a243798e27279ac6a2ae3709b68cee228438677b5339ad06118c6a6323f	OCM W-Stack/Status List Service Chart
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/storage-service:1.3.2-helm	sha256:f0ae40a5db1198e3c926eeadcf4e14c40a4cbbf36830b5518588ad4d0cc033e3	OCM W-Stack/Storage Service
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/well-known-service:1.5.2-helm	sha256:581279e839fb804ec562ca8f5eac72d6d17e339da4fee3f6fdf29162869b27ca	OCM W-Stack/Well Known Chart
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/tsa/policy:1.1.2-helm	sha256:94af34823474bd3f6d7d8157897fb25697fa34903c3449b6e861412060929ed8	OCM W-Stack/Policy Chart
+chart	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/tsa/signer:2.3.4-helm	sha256:63c98e1a3d4cb4cb57cd9ddb277024a37cac55fbabe4af667375041dfe06c82e	OCM W-Stack/Crypto Service
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/common-services/sd-jwt-service:1.2.13	sha256:3eabd843ebf173056ad6199c11a6f5caf0cda04f0f580d0219e7749be7b0cb83	OCM W-Stack/SdJwt Service
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-offering-bootstrap:dev	sha256:08ee7788c7662f975a91969cc19d20ad04c34aaf29ef4137f3e76475cad0afd9	OCM W-Stack/Offering Dummy
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-retrieval-service:1.1.7	sha256:60bdcc01691ff2bcaed263c2c3f19cc6124f8480997b20b4ccfd21b93120b680	OCM W-Stack/Credential Retrieval
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/credential-verification-service:1.3.7-alpha	sha256:f24dfff5e702a38988870bf0a816f9d947616b0ed4d1295676708e97c8a9dd57	OCM W-Stack/Credential Verification Service Chart
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/dummycontentsigner:2.4.3	sha256:569947e9457038fab1feea7680fd404a853f02e5e340c68299525bb030296893	OCM W-Stack/Dummy Content Signer
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/issuance-service:1.9.2	sha256:3c23625b01d2ecd34b97faceabb98369e41549eb8f9d5a75567bfd01a0e4dfec	OCM W-Stack/Credential Issuance
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/pre-authorization-bridge:2.5.7	sha256:31461cb1b75731836dad1992869e8424fc8c0712f7e094c8d7fed527733e4585	OCM W-Stack/Pre Authorization Bridge Chart
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/status-list-service:1.5.0	sha256:18cb2bead0926e8ebe625eb5ab48961da807c5b9367cb44ed8345ea7efd64e83	OCM W-Stack/Status List Service Chart
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/storage-service:1.3.3	sha256:ae4711dec65739f9c4a9523ced4f7311be2205a4333195b4994335a8f9dda06d	OCM W-Stack/Storage Service
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/ocm-wstack/well-known-service:1.5.2	sha256:7c3bc7a028b21f3e76cfa482a2a7195cc5aab54505fe2c275e8c364c1c50e836	OCM W-Stack/Well Known Chart
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/tsa/crypto-provider-hashicorp-vault-plugin:2.0.6	sha256:9d47f3a05babe7677e4cdf4e2f1dd8fcbcecbf635cef5fe7ecfa0b12c00372d7	OCM W-Stack/Crypto Service;OCM W-Stack/Storage Service
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/tsa/policy:1.1.2	sha256:3ae1348bdbfdba999d926acd57078c256cf86cb2000759d164b8dce937cd5504	OCM W-Stack/Policy Chart
+image	node-654e3bca7fbeeed18f81d7c7.ps-xaas.io/tsa/signer:2.3.8	sha256:26e361e6dc099f7e7e5e1524bdc669e634ef31a8b9f75b9aba2d8e51d80ec047	OCM W-Stack/Crypto Service
